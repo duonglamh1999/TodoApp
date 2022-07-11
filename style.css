@@ -1,43 +1,73 @@
-#toDoList>li
-{
-    min-width: 30rem;
-    list-style-type: none;
-    display: flex;
-    border: 1px solid black;
-    border-radius: 1rem;
-    padding: .5rem;
-    margin: 1%;
-    justify-content: space-between;
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
 }
-li>button{
- content: x;
+body {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    background: #5c5c8a;
+    min-height: 100vh;
 }
-#toDoList {
+
+h1,form{
+    min-height: 20vh;
     display: flex;
-    flex-direction: column;
-    align-items:center;
+    align-items: center;
     justify-content: center;
 }
-.container{
-    background-color: antiquewhite;
-    height: 100vh;
+
+form input, form button {
+    padding: .5rem;
+    border: none;
+    background: white;
+    font-size: 2rem;
+}
+form button {
+    color:black;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 3.5rem;
+}
+form button:hover{
+    background: #4FD373;
+    color: white;
+}
+#toDoList-container{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+#toDoList{
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo{
+    margin: 0.5rem;
+    background: white;
+    font-size: 1.5rem;
     display: flex;
-    justify-content: top;
+    justify-content: space-between;
+    align-items: center;
 }
-#title{
-    position:absolute;
+.todo li{
+    flex: 1;
 }
+.todo button,.checkbox {
+    font-size: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+    border :none;
+    background:white;
+}
+.todo button{
+    transition: all 0.3s ease;
+}
+.todo button:hover{
+    background: red;
+}
+
 .finished{
     text-decoration: line-through;
-}
-button{
-}
-form{
-    margin:10% auto 0 auto;
-	padding:30px;
-	width:30rem;
-    height: 20px;
-	overflow:hidden;
-	background:white;
-	border-radius:10px;
+    color:grey;
 }
