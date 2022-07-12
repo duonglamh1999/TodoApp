@@ -8,7 +8,9 @@ body {
     background: #5c5c8a;
     min-height: 100vh;
 }
-
+h1{
+    color: white;
+}
 h1,form{
     min-height: 20vh;
     display: flex;
@@ -17,7 +19,7 @@ h1,form{
 }
 
 form input, form button {
-    padding: .5rem;
+    padding: 1rem;
     border: none;
     background: white;
     font-size: 2rem;
@@ -52,6 +54,7 @@ form button:hover{
 }
 .todo li{
     flex: 1;
+    padding-left: 1rem;
 }
 .todo button,.checkbox {
     font-size: 1rem;
