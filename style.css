@@ -63,11 +63,14 @@ form button:hover{
     border :none;
     background:white;
 }
+
 .todo button{
-    transition: all 0.3s ease;
+    width: 3rem;
+    text-align: center;
 }
 .todo button:hover{
     background: red;
+
 }
 
 .finished{
